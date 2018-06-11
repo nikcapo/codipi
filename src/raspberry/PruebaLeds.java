@@ -17,17 +17,17 @@ public class PruebaLeds {
 	        final GpioController gpio = GpioFactory.getInstance();
 
 	        // provision gpio pin #01 as an output pin and turn on
-	        final GpioPinDigitalOutput led1 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_17, "MyLED", PinState.HIGH);
+	        final GpioPinDigitalOutput led4 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_17, "MyLED", PinState.HIGH);
 	        Thread.sleep(1000);
-	        led1.low();
+	        led4.low();
 	        
-	        final GpioPinDigitalOutput led2 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_22, "MyLED", PinState.HIGH);
+	        final GpioPinDigitalOutput led5 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_22, "MyLED", PinState.HIGH);
 	        Thread.sleep(1000);
-	        led2.low();
+	        led5.low();
 	        
-	        final GpioPinDigitalOutput led3 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_27, "MyLED", PinState.HIGH);
+	        final GpioPinDigitalOutput led6 = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_27, "MyLED", PinState.HIGH);
 	        Thread.sleep(1000);
-	        led3.low();
+	        led6.low();
 	}
 
 }
