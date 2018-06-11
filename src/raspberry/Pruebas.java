@@ -52,7 +52,10 @@ public class Pruebas {
 
         // provision gpio pin #01 as an output pin and turn on
         final GpioPinDigitalOutput pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01, "MyLED", PinState.HIGH);
-
+        
+       
+        
+        
         // set shutdown state for this pin
 //        pin.setShutdownOptions(true, PinState.LOW);
 
